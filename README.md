@@ -1,2 +1,3 @@
 # m1n3
-some configs for some things
+claymore 11 binaries, configs, to instadeploy
+xmrig 2.4.x binaries, configs, to instadeploy
