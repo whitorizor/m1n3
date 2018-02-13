@@ -1,0 +1,399 @@
+10:34:38:435	b2ab8740	Check and remove old log files...
+10:34:38:435	b2ab8740	args: -epool eth-eu.dwarfpool.com:8008 -ewal 0x975970924D454e1698d8f0F4CaF479894c5E3e36/omeganv -epsw x -dcri 75 -platform 2 -mport 0 -dcoin keccak -dpool stratum+tcp://keccak.eu.nicehash.com:3338 -dwal 37eoVoPxQv7zFeDqfvHJNY7z6a6UJtCsxd.omeganv -dpsw x 
+10:34:38:435	b2ab8740	
+10:34:38:435	b2ab8740	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+10:34:38:435	b2ab8740	บ                Claymore's Dual GPU Miner - v11.0               บ
+10:34:38:435	b2ab8740	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+10:34:38:435	b2ab8740	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+10:34:38:435	b2ab8740	
+10:34:38:435	b2ab8740	b501 
+10:34:38:635	b2ab8740	ETH: 1 pool is specified
+10:34:38:635	b2ab8740	Main Ethereum pool is eth-eu.dwarfpool.com:8008
+10:34:38:635	b2ab8740	KC: 1 pool is specified
+10:34:38:635	b2ab8740	Main Keccak pool is keccak.eu.nicehash.com:3338
+10:34:38:816	b2ab8740	CUDA initializing...
+
+10:34:38:816	b2ab8740	NVIDIA Cards available: 3 
+10:34:38:816	b2ab8740	CUDA Driver Version/Runtime Version: 9.0/8.0
+10:34:38:831	b2ab8740	GPU #0: GeForce GTX 1080, 8105 MB available, 20 compute units, capability: 6.1  (pci bus 1:0:0)
+
+10:34:38:833	b2ab8740	GPU #1: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 3:0:0)
+
+10:34:38:835	b2ab8740	GPU #2: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 4:0:0)
+
+10:34:38:835	b2ab8740	Total cards: 3 
+10:34:42:835	b2ab8740	No AMD cards in the list, ADL library will not be used.
+10:34:42:837	b2ab8740	NVML version: 9.384.111
+10:34:43:576	83fff700	ETH: Stratum - connecting to 'eth-eu.dwarfpool.com' <87.98.182.61> port 8008
+10:34:43:604	83fff700	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x975970924D454e1698d8f0F4CaF479894c5E3e36/omeganv", "x"], "id": 2, "method": "eth_submitLogin"}
+
+10:34:43:604	83fff700	ETH: Stratum - Connected (eth-eu.dwarfpool.com:8008)
+10:34:43:635	83fff700	got 39 bytes
+10:34:43:635	83fff700	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+10:34:43:635	83fff700	parse packet: 38
+10:34:43:635	83fff700	ETH: Authorized
+10:34:43:635	83fff700	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+10:34:43:635	83fff700	new buf size: 0
+10:34:43:637	b2ab8740	DUAL MINING MODE ENABLED: ETHEREUM+KECCAK
+10:34:43:637	b2ab8740	ETH: eth-proxy stratum mode
+10:34:43:637	b2ab8740	Watchdog enabled
+10:34:43:637	b2ab8740	
+10:34:43:675	83fff700	got 244 bytes
+10:34:43:675	83fff700	buf: {"result":["0xb7802dc9226a07e896847995d5528b38c02d42503791b271140f304844759ca3","0xf4c702c8373b1a6467eb30d4640b62436e55a6c8c9e2f486197f6e0b2dd72f5f","0x0000000225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"],"jsonrpc":"2.0","id":3}
+
+
+10:34:43:675	83fff700	parse packet: 242
+10:34:43:675	83fff700	ETH: job changed
+10:34:43:675	83fff700	new buf size: 0
+10:34:43:685	837fe700	 KC: Stratum - connecting to 'keccak.eu.nicehash.com' <159.122.29.199> port 3338
+10:34:43:740	8b7fe700	Setting DAG epoch #169...
+10:34:43:741	837fe700	send: {"id": 1, "method": "mining.subscribe", "params": ["dual 1.0"]}
+
+10:34:43:741	837fe700	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+10:34:43:741	837fe700	send: {"id": 2, "method": "mining.authorize", "params": ["37eoVoPxQv7zFeDqfvHJNY7z6a6UJtCsxd.omeganv","x"]}
+
+10:34:43:741	837fe700	 KC: Stratum - Connected (keccak.eu.nicehash.com:3338)
+10:34:43:831	837fe700	got 101 bytes
+10:34:43:831	837fe700	buf: {"id":1,"error":null,"result":[["mining.notify","2fdee8983d00a01425a0fe963a0ed9e1"],"780042eac1",3]}
+
+10:34:43:831	837fe700	parse packet: 100
+10:34:43:831	837fe700	new buf size: 0
+10:34:43:851	837fe700	got 36 bytes
+10:34:43:852	837fe700	buf: {"id":2,"result":true,"error":null}
+
+10:34:43:852	837fe700	parse packet: 35
+10:34:43:852	837fe700	 KC: Authorized
+10:34:43:852	837fe700	new buf size: 0
+10:34:43:872	837fe700	got 645 bytes
+10:34:43:872	837fe700	buf: {"id":null,"method":"mining.set_difficulty","params":[512]}
+{"params":["0000001366d60581","d6f51ee3afd8faecfb6bb1cd3ff563e0cfb88a953c91438d0000232700000000","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff27034ae104062f503253482f0413b1825a08","0d2f6e6f64655374726174756d2f0000000003c051779c020000001976a9143f134b6475774232a6bb1c6733cc04ad1edcfa7f88ac80a3ee38050000001976a9148dd572088dfd94a7682408830cd0842fd873278e88acc06dec632c0000001976a91474757a0c2a0a3c6a06448dbd2891a45239783f7388ac00000000",[],"00000002","1a5b8000","5a82b113",true],"id":null,"method":"mining.notify"}
+{"id":5,"result":true,"error":null}
+
+10:34:43:872	837fe700	parse packet: 59
+10:34:43:872	837fe700	remove first packet 585
+10:34:43:872	837fe700	new buf size: 585
+10:34:43:872	837fe700	parse packet: 548
+10:34:43:872	837fe700	remove first packet 36
+10:34:43:872	837fe700	new buf size: 36
+10:34:43:872	837fe700	parse packet: 35
+10:34:43:872	837fe700	new buf size: 0
+10:34:43:885	827fc700	
+10:34:43:885	827fc700	GPU #0: GeForce GTX 1080, 8105 MB available, 20 compute units, capability: 6.1  (pci bus 1:0:0)
+
+10:34:43:885	827fc700	GPU #1: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 3:0:0)
+
+10:34:43:885	827fc700	GPU #2: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 4:0:0)
+
+10:34:43:885	827fc700	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0), Time: 00:00
+10:34:43:885	827fc700	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:43:885	827fc700	 KC - Total Speed: 0.000 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0)
+10:34:43:885	827fc700	 KC: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:43:885	827fc700	Incorrect ETH shares: none
+10:34:43:885	827fc700	1 minute average ETH total speed: 0.000 Mh/s
+10:34:43:885	827fc700	Pool switches: ETH - 0, KC - 0
+10:34:43:885	827fc700	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+Current KC share target: 0x000000007fff8000 (diff: 8590MH)
+10:34:43:889	827fc700	GPU0 t=35C fan=0%, GPU1 t=32C fan=25%, GPU2 t=29C fan=25%
+10:34:43:889	827fc700	
+10:34:44:524	827fc700	
+10:34:44:524	827fc700	GPU #0: GeForce GTX 1080, 8105 MB available, 20 compute units, capability: 6.1  (pci bus 1:0:0)
+
+10:34:44:524	827fc700	GPU #1: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 3:0:0)
+
+10:34:44:524	827fc700	GPU #2: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 4:0:0)
+
+10:34:44:524	827fc700	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0), Time: 00:00
+10:34:44:524	827fc700	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:44:524	827fc700	 KC - Total Speed: 0.000 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0)
+10:34:44:524	827fc700	 KC: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:44:524	827fc700	Incorrect ETH shares: none
+10:34:44:524	827fc700	1 minute average ETH total speed: 0.000 Mh/s
+10:34:44:524	827fc700	Pool switches: ETH - 0, KC - 0
+10:34:44:524	827fc700	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+Current KC share target: 0x000000007fff8000 (diff: 8590MH)
+10:34:44:526	827fc700	GPU0 t=35C fan=0%, GPU1 t=32C fan=25%, GPU2 t=29C fan=25%
+10:34:44:526	827fc700	
+10:34:45:141	827fc700	
+10:34:45:141	827fc700	GPU #0: GeForce GTX 1080, 8105 MB available, 20 compute units, capability: 6.1  (pci bus 1:0:0)
+
+10:34:45:141	827fc700	GPU #1: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 3:0:0)
+
+10:34:45:141	827fc700	GPU #2: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 4:0:0)
+
+10:34:45:141	827fc700	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0), Time: 00:00
+10:34:45:141	827fc700	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:45:141	827fc700	 KC - Total Speed: 0.000 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0)
+10:34:45:141	827fc700	 KC: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:45:141	827fc700	Incorrect ETH shares: none
+10:34:45:141	827fc700	1 minute average ETH total speed: 0.000 Mh/s
+10:34:45:141	827fc700	Pool switches: ETH - 0, KC - 0
+10:34:45:141	827fc700	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+Current KC share target: 0x000000007fff8000 (diff: 8590MH)
+10:34:45:143	827fc700	GPU0 t=35C fan=0%, GPU1 t=32C fan=25%, GPU2 t=29C fan=25%
+10:34:45:143	827fc700	
+10:34:45:408	827fc700	-dcri is set to 74 (for all GPUs)
+10:34:46:028	8b7fe700	Setting DAG epoch #169 for GPU0
+10:34:46:029	8b7fe700	Create GPU buffer for GPU0
+10:34:46:029	8a7fc700	Setting DAG epoch #169 for GPU1
+10:34:46:029	8a7fc700	Create GPU buffer for GPU1
+10:34:46:029	897fa700	Setting DAG epoch #169 for GPU2
+10:34:46:029	897fa700	Create GPU buffer for GPU2
+10:34:46:109	827fc700	-dcri is set to 73 (for all GPUs)
+10:34:46:317	827fc700	-dcri is set to 72 (for all GPUs)
+10:34:46:480	827fc700	-dcri is set to 71 (for all GPUs)
+10:34:46:635	827fc700	-dcri is set to 70 (for all GPUs)
+10:34:46:785	827fc700	-dcri is set to 69 (for all GPUs)
+10:34:46:938	827fc700	-dcri is set to 68 (for all GPUs)
+10:34:47:099	827fc700	-dcri is set to 67 (for all GPUs)
+10:34:47:362	827fc700	-dcri is set to 66 (for all GPUs)
+10:34:47:521	827fc700	-dcri is set to 65 (for all GPUs)
+10:34:47:646	827fc700	-dcri is set to 64 (for all GPUs)
+10:34:47:776	827fc700	-dcri is set to 63 (for all GPUs)
+10:34:47:947	827fc700	-dcri is set to 62 (for all GPUs)
+10:34:48:089	827fc700	-dcri is set to 61 (for all GPUs)
+10:34:48:238	827fc700	-dcri is set to 60 (for all GPUs)
+10:34:48:367	827fc700	-dcri is set to 59 (for all GPUs)
+10:34:48:868	827fc700	-dcri is set to 58 (for all GPUs)
+10:34:48:918	827fc700	-dcri is set to 57 (for all GPUs)
+10:34:48:968	827fc700	-dcri is set to 56 (for all GPUs)
+10:34:49:018	827fc700	-dcri is set to 55 (for all GPUs)
+10:34:49:068	827fc700	-dcri is set to 54 (for all GPUs)
+10:34:49:118	827fc700	-dcri is set to 53 (for all GPUs)
+10:34:49:168	827fc700	-dcri is set to 52 (for all GPUs)
+10:34:49:219	827fc700	-dcri is set to 51 (for all GPUs)
+10:34:49:269	827fc700	-dcri is set to 50 (for all GPUs)
+10:34:49:319	827fc700	-dcri is set to 49 (for all GPUs)
+10:34:49:369	827fc700	-dcri is set to 48 (for all GPUs)
+10:34:49:419	827fc700	-dcri is set to 47 (for all GPUs)
+10:34:49:469	827fc700	-dcri is set to 46 (for all GPUs)
+10:34:49:519	827fc700	-dcri is set to 45 (for all GPUs)
+10:34:49:570	827fc700	-dcri is set to 44 (for all GPUs)
+10:34:49:620	827fc700	-dcri is set to 43 (for all GPUs)
+10:34:49:670	827fc700	-dcri is set to 42 (for all GPUs)
+10:34:49:720	827fc700	-dcri is set to 41 (for all GPUs)
+10:34:49:770	827fc700	-dcri is set to 40 (for all GPUs)
+10:34:49:820	827fc700	-dcri is set to 39 (for all GPUs)
+10:34:49:870	827fc700	-dcri is set to 38 (for all GPUs)
+10:34:49:921	827fc700	-dcri is set to 37 (for all GPUs)
+10:34:49:971	827fc700	-dcri is set to 36 (for all GPUs)
+10:34:50:021	827fc700	-dcri is set to 35 (for all GPUs)
+10:34:50:071	827fc700	-dcri is set to 34 (for all GPUs)
+10:34:50:121	827fc700	-dcri is set to 33 (for all GPUs)
+10:34:50:171	827fc700	-dcri is set to 32 (for all GPUs)
+10:34:50:221	827fc700	-dcri is set to 31 (for all GPUs)
+10:34:50:272	827fc700	-dcri is set to 30 (for all GPUs)
+10:34:50:322	827fc700	-dcri is set to 29 (for all GPUs)
+10:34:50:372	827fc700	-dcri is set to 28 (for all GPUs)
+10:34:50:422	827fc700	-dcri is set to 27 (for all GPUs)
+10:34:50:472	827fc700	-dcri is set to 26 (for all GPUs)
+10:34:50:522	827fc700	-dcri is set to 25 (for all GPUs)
+10:34:50:572	827fc700	-dcri is set to 24 (for all GPUs)
+10:34:50:623	827fc700	-dcri is set to 23 (for all GPUs)
+10:34:50:673	827fc700	-dcri is set to 22 (for all GPUs)
+10:34:50:723	827fc700	-dcri is set to 21 (for all GPUs)
+10:34:50:773	827fc700	-dcri is set to 20 (for all GPUs)
+10:34:50:823	827fc700	-dcri is set to 19 (for all GPUs)
+10:34:50:873	827fc700	-dcri is set to 18 (for all GPUs)
+10:34:50:924	827fc700	-dcri is set to 17 (for all GPUs)
+10:34:50:974	827fc700	-dcri is set to 16 (for all GPUs)
+10:34:51:024	827fc700	-dcri is set to 15 (for all GPUs)
+10:34:51:074	827fc700	-dcri is set to 14 (for all GPUs)
+10:34:51:124	827fc700	-dcri is set to 13 (for all GPUs)
+10:34:51:174	827fc700	-dcri is set to 12 (for all GPUs)
+10:34:51:224	827fc700	-dcri is set to 11 (for all GPUs)
+10:34:51:275	827fc700	-dcri is set to 10 (for all GPUs)
+10:34:51:325	827fc700	-dcri is set to 9 (for all GPUs)
+10:34:51:375	827fc700	-dcri is set to 8 (for all GPUs)
+10:34:51:425	827fc700	-dcri is set to 7 (for all GPUs)
+10:34:51:475	827fc700	-dcri is set to 6 (for all GPUs)
+10:34:51:525	827fc700	-dcri is set to 5 (for all GPUs)
+10:34:51:575	827fc700	-dcri is set to 4 (for all GPUs)
+10:34:51:626	827fc700	-dcri is set to 3 (for all GPUs)
+10:34:51:676	827fc700	-dcri is set to 2 (for all GPUs)
+10:34:51:726	827fc700	-dcri is set to 3 (for all GPUs)
+10:34:51:914	827fc700	-dcri is set to 4 (for all GPUs)
+10:34:52:080	827fc700	-dcri is set to 5 (for all GPUs)
+10:34:52:233	827fc700	-dcri is set to 6 (for all GPUs)
+10:34:52:394	827fc700	-dcri is set to 7 (for all GPUs)
+10:34:52:566	827fc700	-dcri is set to 8 (for all GPUs)
+10:34:52:739	827fc700	-dcri is set to 9 (for all GPUs)
+10:34:52:903	827fc700	-dcri is set to 10 (for all GPUs)
+10:34:53:047	827fc700	-dcri is set to 11 (for all GPUs)
+10:34:53:158	83fff700	got 244 bytes
+10:34:53:158	83fff700	buf: {"result":["0x77ed05f6671f56410aef14f6f8987c8b26905c3f209710ab12ca1a0c09ecfe71","0xf4c702c8373b1a6467eb30d4640b62436e55a6c8c9e2f486197f6e0b2dd72f5f","0x0000000225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"],"jsonrpc":"2.0","id":0}
+
+
+10:34:53:158	83fff700	parse packet: 242
+10:34:53:158	83fff700	ETH: job changed
+10:34:53:158	83fff700	new buf size: 0
+10:34:53:158	83fff700	ETH: 02/13/18-10:34:53 - New job from eth-eu.dwarfpool.com:8008
+10:34:53:158	83fff700	target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+10:34:53:158	83fff700	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+10:34:53:158	83fff700	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:53:158	83fff700	 KC - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+10:34:53:158	83fff700	 KC: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:53:193	827fc700	-dcri is set to 12 (for all GPUs)
+10:34:53:350	827fc700	-dcri is set to 13 (for all GPUs)
+10:34:53:676	83fff700	ETH: checking pool connection...
+10:34:53:676	83fff700	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+10:34:53:703	83fff700	got 244 bytes
+10:34:53:703	83fff700	buf: {"result":["0x77ed05f6671f56410aef14f6f8987c8b26905c3f209710ab12ca1a0c09ecfe71","0xf4c702c8373b1a6467eb30d4640b62436e55a6c8c9e2f486197f6e0b2dd72f5f","0x0000000225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"],"jsonrpc":"2.0","id":3}
+
+
+10:34:53:703	83fff700	parse packet: 242
+10:34:53:704	83fff700	ETH: job is the same
+10:34:53:704	83fff700	new buf size: 0
+10:34:53:727	827fc700	-dcri is set to 14 (for all GPUs)
+10:34:53:919	827fc700	-dcri is set to 15 (for all GPUs)
+10:34:54:515	827fc700	
+10:34:54:515	827fc700	GPU #0: GeForce GTX 1080, 8105 MB available, 20 compute units, capability: 6.1  (pci bus 1:0:0)
+
+10:34:54:515	827fc700	GPU #1: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 3:0:0)
+
+10:34:54:515	827fc700	GPU #2: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 4:0:0)
+
+10:34:54:516	827fc700	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0), Time: 00:00
+10:34:54:516	827fc700	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:54:516	827fc700	 KC - Total Speed: 0.000 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0)
+10:34:54:516	827fc700	 KC: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:54:516	827fc700	Incorrect ETH shares: none
+10:34:54:516	827fc700	1 minute average ETH total speed: 0.000 Mh/s
+10:34:54:516	827fc700	Pool switches: ETH - 0, KC - 0
+10:34:54:516	827fc700	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+Current KC share target: 0x000000007fff8000 (diff: 8590MH)
+10:34:54:517	827fc700	GPU0 t=40C fan=0%, GPU1 t=45C fan=25%, GPU2 t=41C fan=25%
+10:34:54:517	827fc700	
+10:34:54:761	8b7fe700	GPU0 DAG creation time - 8666 ms
+10:34:54:761	8b7fe700	Setting DAG epoch #169 for GPU0 done
+10:34:55:468	827fc700	
+10:34:55:468	827fc700	GPU #0: GeForce GTX 1080, 8105 MB available, 20 compute units, capability: 6.1  (pci bus 1:0:0)
+
+10:34:55:468	827fc700	GPU #1: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 3:0:0)
+
+10:34:55:468	827fc700	GPU #2: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 4:0:0)
+
+10:34:55:468	827fc700	ETH - Total Speed: 21.878 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0), Time: 00:00
+10:34:55:468	827fc700	ETH: GPU0 21.878 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:55:468	827fc700	 KC - Total Speed: 109.391 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0)
+10:34:55:468	827fc700	 KC: GPU0 109.391 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+10:34:55:469	827fc700	Incorrect ETH shares: none
+10:34:55:469	827fc700	1 minute average ETH total speed: 22.310 Mh/s
+10:34:55:469	827fc700	Pool switches: ETH - 0, KC - 0
+10:34:55:469	827fc700	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+Current KC share target: 0x000000007fff8000 (diff: 8590MH)
+10:34:55:470	827fc700	GPU0 t=41C fan=0%, GPU1 t=45C fan=25%, GPU2 t=41C fan=25%
+10:34:55:470	827fc700	
+10:34:55:902	897fa700	GPU2 DAG creation time - 9765 ms
+10:34:55:902	897fa700	Setting DAG epoch #169 for GPU2 done
+10:34:55:912	8a7fc700	GPU1 DAG creation time - 9773 ms
+10:34:55:912	8a7fc700	Setting DAG epoch #169 for GPU1 done
+10:34:58:350	897fa700	KC: put share nonce d4a195 enonce 40
+10:34:58:350	897fa700	KC round found 1 shares
+10:34:58:352	837fe700	 KC: 02/13/18-10:34:58 - SHARE FOUND - (GPU 2)
+10:34:58:352	837fe700	send: {"params": ["37eoVoPxQv7zFeDqfvHJNY7z6a6UJtCsxd.omeganv", "0000001366d60581", "400000", "5a82b113", "00d4a195"], "id": 12, "method": "mining.submit"}
+
+10:34:58:413	837fe700	got 37 bytes
+10:34:58:413	837fe700	buf: {"id":12,"result":true,"error":null}
+
+10:34:58:413	837fe700	parse packet: 36
+10:34:58:413	837fe700	 KC: Share accepted (61 ms)!
+10:34:58:413	837fe700	new buf size: 0
+10:35:00:746	83fff700	got 244 bytes
+10:35:00:746	83fff700	buf: {"result":["0xd5ce01471cc424ec333a664df419855607ca5a9ccd7f554c6c7e35c99854f1a4","0xf4c702c8373b1a6467eb30d4640b62436e55a6c8c9e2f486197f6e0b2dd72f5f","0x0000000225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"],"jsonrpc":"2.0","id":0}
+
+
+10:35:00:746	83fff700	parse packet: 242
+10:35:00:746	83fff700	ETH: job changed
+10:35:00:746	83fff700	new buf size: 0
+10:35:00:747	83fff700	ETH: 02/13/18-10:35:00 - New job from eth-eu.dwarfpool.com:8008
+10:35:00:747	83fff700	target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+10:35:00:747	83fff700	ETH - Total Speed: 59.801 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+10:35:00:747	83fff700	ETH: GPU0 21.892 Mh/s, GPU1 18.946 Mh/s, GPU2 18.963 Mh/s
+10:35:00:747	83fff700	 KC - Total Speed: 299.001 Mh/s, Total Shares: 1, Rejected: 0
+10:35:00:747	83fff700	 KC: GPU0 109.458 Mh/s, GPU1 94.729 Mh/s, GPU2 94.814 Mh/s
+10:35:00:958	89ffb700	KC: put share nonce 1d743e9 enonce 87
+10:35:00:958	89ffb700	KC round found 1 shares
+10:35:00:958	837fe700	 KC: 02/13/18-10:35:00 - SHARE FOUND - (GPU 1)
+10:35:00:958	837fe700	send: {"params": ["37eoVoPxQv7zFeDqfvHJNY7z6a6UJtCsxd.omeganv", "0000001366d60581", "870000", "5a82b113", "01d743e9"], "id": 11, "method": "mining.submit"}
+
+10:35:01:040	837fe700	got 37 bytes
+10:35:01:041	837fe700	buf: {"id":11,"result":true,"error":null}
+
+10:35:01:041	837fe700	parse packet: 36
+10:35:01:041	837fe700	 KC: Share accepted (82 ms)!
+10:35:01:041	837fe700	new buf size: 0
+10:35:03:676	83fff700	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x390a3d5", "0x000000000000000000000000000000000000000000000000000000002f15461e"]}
+
+10:35:03:677	83fff700	ETH: checking pool connection...
+10:35:03:678	83fff700	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+10:35:03:705	83fff700	got 40 bytes
+10:35:03:705	83fff700	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+
+10:35:03:705	83fff700	parse packet: 38
+10:35:03:705	83fff700	new buf size: 0
+10:35:03:732	83fff700	got 244 bytes
+10:35:03:732	83fff700	buf: {"result":["0xd5ce01471cc424ec333a664df419855607ca5a9ccd7f554c6c7e35c99854f1a4","0xf4c702c8373b1a6467eb30d4640b62436e55a6c8c9e2f486197f6e0b2dd72f5f","0x0000000225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"],"jsonrpc":"2.0","id":3}
+
+
+10:35:03:732	83fff700	parse packet: 242
+10:35:03:732	83fff700	ETH: job is the same
+10:35:03:732	83fff700	new buf size: 0
+10:35:04:664	827fc700	
+10:35:04:664	827fc700	GPU #0: GeForce GTX 1080, 8105 MB available, 20 compute units, capability: 6.1  (pci bus 1:0:0)
+
+10:35:04:664	827fc700	GPU #1: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 3:0:0)
+
+10:35:04:664	827fc700	GPU #2: GeForce GTX 1060 6GB, 6072 MB available, 10 compute units, capability: 6.1  (pci bus 4:0:0)
+
+10:35:04:664	827fc700	ETH - Total Speed: 59.779 Mh/s, Total Shares: 0(0+0+0), Rejected: 0(0+0+0), Time: 00:00
+10:35:04:664	827fc700	ETH: GPU0 21.880 Mh/s, GPU1 18.942 Mh/s, GPU2 18.956 Mh/s
+10:35:04:664	827fc700	 KC - Total Speed: 298.891 Mh/s, Total Shares: 2(0+1+1), Rejected: 0(0+0+0)
+10:35:04:664	827fc700	 KC: GPU0 109.399 Mh/s, GPU1 94.711 Mh/s, GPU2 94.781 Mh/s
+10:35:04:664	827fc700	Incorrect ETH shares: none
+10:35:04:664	827fc700	1 minute average ETH total speed: 59.837 Mh/s
+10:35:04:664	827fc700	Pool switches: ETH - 0, KC - 0
+10:35:04:664	827fc700	Current ETH share target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+Current KC share target: 0x000000007fff8000 (diff: 8590MH)
+10:35:04:666	827fc700	GPU0 t=43C fan=0%, GPU1 t=51C fan=28%, GPU2 t=47C fan=25%
+10:35:04:666	827fc700	
+10:35:05:531	83fff700	got 244 bytes
+10:35:05:531	83fff700	buf: {"result":["0x10fec8bb2403ec118200cd2206d93033cecf52d36c9e60a11fc25b962b3a1d99","0xf4c702c8373b1a6467eb30d4640b62436e55a6c8c9e2f486197f6e0b2dd72f5f","0x0000000225c17d04dad2965cc5a02a23e254c0c3f75d9178046aeb27ce1ca574"],"jsonrpc":"2.0","id":0}
+
+
+10:35:05:531	83fff700	parse packet: 242
+10:35:05:531	83fff700	ETH: job changed
+10:35:05:531	83fff700	new buf size: 0
+10:35:05:531	83fff700	ETH: 02/13/18-10:35:05 - New job from eth-eu.dwarfpool.com:8008
+10:35:05:531	83fff700	target: 0x0000000225c17d04 (diff: 2000MH), epoch 169(2.32GB)
+10:35:05:531	83fff700	ETH - Total Speed: 59.796 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+10:35:05:531	83fff700	ETH: GPU0 21.882 Mh/s, GPU1 18.949 Mh/s, GPU2 18.965 Mh/s
+10:35:05:531	83fff700	 KC - Total Speed: 298.978 Mh/s, Total Shares: 2, Rejected: 0
+10:35:05:531	83fff700	 KC: GPU0 109.409 Mh/s, GPU1 94.746 Mh/s, GPU2 94.823 Mh/s
+10:35:06:118	837fe700	got 616 bytes
+10:35:06:118	837fe700	buf: {"params":["0000001366d60bdd","d6f51ee3afd8faecfb6bb1cd3ff563e0cfb88a953c91438d0000232700000000","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff27034ae104062f503253482f044ab1825a08","0d2f6e6f64655374726174756d2f000000000360d8789c020000001976a9143f134b6475774232a6bb1c6733cc04ad1edcfa7f88ac80a3ee38050000001976a9148dd572088dfd94a7682408830cd0842fd873278e88acc06dec632c0000001976a91474757a0c2a0a3c6a06448dbd2891a45239783f7388ac00000000",["c36ab2b6a9a13ecc73065b5135a440b6a3d5af8cd45746868f7736edea514c0c"],"00000002","1a5b8000","5a82b14a",false],"id":null,"method":"mining.notify"}
+
+10:35:06:118	837fe700	parse packet: 615
+10:35:06:118	837fe700	new buf size: 0
+10:35:06:118	837fe700	 KC: 02/13/18-10:35:06 - New job from keccak.eu.nicehash.com:3338
+10:35:06:118	837fe700	target: 0x000000007fff8000 (diff: 8590MH)
+10:35:06:850	827fc700	
+10:35:06:850	827fc700	List of Keccak pools:
+10:35:06:850	827fc700	0. keccak.eu.nicehash.com:3338
+10:35:06:850	827fc700	
+Press a number key to select current Keccak pool
+10:35:08:657	ab41a700	GPU0 t=44C fan=0%, GPU1 t=53C fan=30%, GPU2 t=49C fan=25%
+10:35:08:660	abc1b700	em hbt: 0, dm hbt: 0, fm hbt: 6, 
+10:35:08:661	abc1b700	watchdog - thread 0 (gpu0), hb time 313
+10:35:08:661	abc1b700	watchdog - thread 1 (gpu0), hb time 133
+10:35:08:661	abc1b700	watchdog - thread 2 (gpu1), hb time 109
+10:35:08:661	abc1b700	watchdog - thread 3 (gpu1), hb time 6
+10:35:08:661	abc1b700	watchdog - thread 4 (gpu2), hb time 133
+10:35:08:661	abc1b700	watchdog - thread 5 (gpu2), hb time 29
+10:35:12:693	b2ab8740	Quit signal received...
+10:35:12:794	b2ab8740	Quit, please wait...
